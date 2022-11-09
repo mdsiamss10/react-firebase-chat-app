@@ -5,11 +5,13 @@ import Logout from "./Logout";
 import Signin from "./Signin";
 
 function Navbar() {
+  const [user] = useAuthState(auth);
   const style = {
-    nav: `bg-purple-700 shadow-lg md:flex-row flex flex-col justify-between space-y-2 md:space-y-2 items-center p-4 rounded-tr-lg px-10 rounded-tl-lg`,
+    nav: `bg-purple-800 shadow-lg md:flex-row flex ${
+      user !== null ? `flex-row` : `flex-col`
+    } justify-between space-y-2 md:space-y-2 items-center p-1 px-2 rounded-tr-lg rounded-tl-lg`,
     heading: `text-white text-2xl font-medium`,
   };
-  const [user] = useAuthState(auth);
   return (
     <>
       <div className={style.nav}>

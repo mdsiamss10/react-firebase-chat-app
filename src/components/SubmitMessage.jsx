@@ -35,7 +35,7 @@ const SubmitMessage = () => {
       <input
         type="submit"
         value="Send"
-        className="w-[20%] text-white bg-purple-700 cursor-pointer"
+        className="min-w-[20%] text-white bg-purple-700 cursor-pointer"
       />
     </form>
   );

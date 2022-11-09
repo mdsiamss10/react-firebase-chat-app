@@ -18,7 +18,7 @@ const Chat = () => {
   }, []);
   return (
     <>
-      <main className="main flex flex-col p-[10px] relative overflow-scroll mb-10">
+      <main className="main flex flex-col p-[10px] relative mb-10">
         {messages && messages.map((e) => <Message key={e.id} message={e} />)}
       </main>
     </>
