@@ -22,7 +22,7 @@ const SubmitMessage = () => {
   };
   return (
     <form
-      className="w-full h14 max-w-[728px flex text-xl absolute bottom-0 z-10"
+      className="w-full h-14 max-w-[728px] flex text-xl absolute bottom-0 z-10"
       onSubmit={handleForm}
     >
       <input

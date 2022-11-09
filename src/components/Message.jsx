@@ -2,8 +2,8 @@ import React from "react";
 import { auth } from "./../firebase/firebase";
 
 const style = {
-  sent: `m-4 ml-auto h-auto text-start max-w-[50%] break-words rounded-lg rounded-br-lg bg-[#395dff] py-2 px-3 text-white shadow-xl`,
-  rec: `m-4 mr-auto h-auto text-start max-w-[50%] break-words rounded-lg rounded-br-lg bg-[#e5e5ea] py-2 px-3 text-black shadow-xl`,
+  sent: `m-4 ml-auto h-auto text-start max-w-[50%] break-words rounded-lg rounded-tl-none bg-[#395dff] py-2 px-3 text-white shadow-xl`,
+  rec: `m-4 mr-auto h-auto text-start max-w-[50%] break-words  rounded-lg rounded-tl-none bg-[#e5e5ea] py-2 px-3 text-black shadow-xl`,
 };
 
 const Message = ({ message }) => {
