@@ -9,7 +9,7 @@ function Navbar() {
   const style = {
     nav: `bg-purple-800 shadow-lg md:flex-row flex ${
       user !== null ? `flex-row` : `flex-col`
-    } justify-between space-y-2 md:space-y-2 items-center p-1 px-2 rounded-tr-lg rounded-tl-lg`,
+    } justify-between space-y-2 md:space-y-2 items-center p-1 px-6 rounded-tr-lg rounded-tl-lg`,
     heading: `text-white text-2xl font-medium`,
   };
   return (
