@@ -1,11 +1,10 @@
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { db } from "../firebase/firebase";
 import Message from "./Message";
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
-  const scroll = useRef();
   useEffect(() => {
     const q = query(collection(db, "messages"), orderBy("timestamp"));
     const unsubscribe = onSnapshot(q, (e) => {
@@ -22,7 +21,6 @@ const Chat = () => {
       <main className="main flex flex-col p-[10px] relative overflow-scroll mb-10">
         {messages && messages.map((e) => <Message key={e.id} message={e} />)}
       </main>
-      <span ref={scroll}></span>
     </>
   );
 };

@@ -19,10 +19,6 @@ const SubmitMessage = () => {
       alert("An error has occurred.");
     });
     setText("");
-    window.scrollTo(
-      0,
-      document.body.scrollHeight || document.documentElement.scrollHeight
-    );
   };
   return (
     <form
@@ -33,13 +29,13 @@ const SubmitMessage = () => {
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="send message"
+        placeholder="Send message"
         className="w-full text-xl text-black p-3 shadow-lg outline-none border-none"
       />
       <input
         type="submit"
         value="Send"
-        className="w-[20%] text-white bg-purple-500 cursor-pointer"
+        className="w-[20%] text-white bg-purple-700 cursor-pointer"
       />
     </form>
   );
